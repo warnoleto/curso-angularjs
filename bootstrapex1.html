@@ -96,8 +96,8 @@
 
         </form>
 
-        <table class="table table-bordered">
-            <thread>
+        <table class="table table-condensed table-bordered">
+            <thead>
                 <tr>
                     <th>Index</th>
                     <th>Nome</th>
@@ -105,7 +105,7 @@
                     <th>Nascimento</th>
                     <th>Sexo</th>
                 </tr>
-            </thread>
+            </thead>
             <tbody>
                 <tr ng-repeat="item in pessoas track by $index" ng-click="selecionar(item)">
                     <td ng-bind="$index"></td>

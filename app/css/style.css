@@ -1,24 +1,24 @@
 @media screen and (max-width: 768px){
     .container{
-        background-color: #245269;
+        background-color: #1b6d85;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
     .container{
-        background-color: #419641;
+        background-color: #2eadae;
     }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px){
     .container{
-        background-color: #985f0d;
+        background-color: #0cc3ca;
     }
 }
 
 @media screen and (min-width: 1200px){
     .container{
-        background-color: #d58512;
+        background-color: #eaf8d9;
     }
 }
 
