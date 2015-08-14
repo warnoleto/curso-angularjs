@@ -1,7 +1,8 @@
 (function() {
 
 
-    angular.module('helloWorldApp', ['ngMessages', 'ui.growl'])
+    angular.module('helloWorldApp', ['ngMessages', 'ui.growl','ui.grid','ui.grid.resizeColumns',
+        'ui.grid.selection', 'ngMaterial'])
 
 
         .controller("HelloWorldController", HelloWorldController);
