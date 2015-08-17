@@ -49,53 +49,44 @@
         <form novalidate name="myForm">
 
             <div class="row">
-
-                <div class="form-group col-sm-2"
-                     ng-class="{'has-error': (myForm.itName.$invalid && !myForm.$pristine)}">
-
-                    <label for="itName"> Nome </label>
-                    <input type="text"
-                           class="form-control"
-                           id="itName"
-                           name="itName"
-                           placeholder="Nome"
-                           ng-model="pessoa.nome"
-                           minlength="5"
-                           maxlength="50"
-                           required/>
-
-                    <div class="help-block" ng-messages="myForm.itName.$error" ng-if="!myForm.$pristine" >
-                        <div ng-messages-include="app/mensagens.html"></div>
-                    </div>
-
+                <div class="col-sm-2">
+                    <md-input-container>
+                        <label>Nome</label>
+                        <input ng-model="pessoa.nome" />
+                    </md-input-container>
                 </div>
 
-                <div class="form-group col-sm-2">
-                    <label for="tiSobrenome"> Sobrenome </label>
-                    <input type="text" class="form-control" id="tiSobrenome" placeholder="Sobrenome" ng-model="pessoa.sobrenome"/>
+                <div class="col-sm-2">
+                    <md-input-container>
+                        <label>Sobrenome</label>
+                        <input ng-model="pessoa.sobrenome" />
+                    </md-input-container>
+                </div>
+                <div class="col-sm-2">
+                    <md-input-container>
+                        <label>Nascimento</label>
+                        <input ng-model="pessoa.nascimento" type="date" />
+                    </md-input-container>
+                </div>
+                <div class="col-sm-2">
+                    <md-input-container>
+                        <label>Sexo</label>
+                        <md-select ng-model="pessoa.sexo">
+                            <md-option value="M">Masculino</md-option>
+                            <md-option value="F">Feminino</md-option>
+                        </md-select>
+                    </md-input-container>
                 </div>
 
-                <div class="form-group col-sm-2">
-                    <label for="tiNascimento"> Nascimento </label>
-                    <input type="date" class="form-control" id="tiNascimento" placeholder="Nascimento" ng-model="pessoa.nascimento"/>
-                </div>
-
-
-                <div class="form-group col-sm-2">
-                    <label for="sSexo"> Sexo </label>
-                    <select id="sSexo" ng-model="pessoa.sexo" class="form-control col-sm-3">
-                        <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
-                    </select>
-                </div>
-
-                <div class="form-group col-sm-2">
-                    <label for="sCor"> Cor </label>
-                    <select id="sCor" ng-model="pessoa.cor" class="form-control col-sm-3">
-                        <option value="#ccffcc">Em aberto</option>
-                        <option value="#ffcccc">Pilantra</option>
-                        <option value="#ccccff">Bom Pagador</option>
-                    </select>
+                <div class="col-sm-2">
+                    <md-input-container>
+                        <label>Cor</label>
+                        <md-select ng-model="pessoa.cor">
+                            <md-option value="#ccffcc">Em aberto</md-option>
+                            <md-option value="#ffcccc">Pilantra</md-option>
+                            <md-option value="#ccccff">Bom Pagador</md-option>
+                        </md-select>
+                    </md-input-container>
                 </div>
 
             </div>
