@@ -44,17 +44,23 @@
                 return;
             }
 
-            var index = $scope.pessoas.indexOf($scope.pessoa);
-            if (index < 0) {
-                $scope.pessoas.push($scope.pessoa);
+            if (angular.isDefined($scope.pessoa.index)) {
+                $scope.pessoas[$scope.pessoa.index] = $scope.pessoa;
             }else{
-                $scope.pessoas[index] = $scope.pessoa;
+                $scope.pessoas.push($scope.pessoa);
             }
             $scope.limpar();
         }
 
-        $scope.editar = function ( item ) {
-            $scope.pessoa = item;
+        $scope.editar = function (item ) {
+            var index = $scope.pessoas.indexOf(item);
+            $scope.pessoa = {
+                            index: index,
+                            nome: item.nome,
+                            sobrenome: item.sobrenome,
+                            nascimento : item.nascimento,
+                            sexo: item.sexo,
+                            cor: item.cor };
         };
 
         $scope.excluir = function ( item ) {
@@ -73,4 +79,5 @@
             $scope.pessoa = item;
         };
     }
+
 })();
