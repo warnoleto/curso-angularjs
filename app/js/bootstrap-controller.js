@@ -64,6 +64,7 @@
         };
 
         $scope.excluir = function ( item ) {
+            console.log(item);
             if ($scope.pessoas.indexOf(item) >= 0) {
                 $scope.pessoas.splice($scope.pessoas.indexOf(item, 1));
                 $scope.limpar();
