@@ -29,5 +29,24 @@
     "angular": "~1.4.4",
     "angular-messages": "~1.4.4",
     "bootstrap": "~3.3.5"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "angular-ui-growl": {
+      "main": [
+        "css/growl.css",
+        "src/growl.js"
+      ]
+    }
   }
 }

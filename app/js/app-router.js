@@ -5,7 +5,7 @@
 
 
     angular.module('uiRouterEx1', ['ngMessages', 'ui.growl','ui.grid','ui.grid.resizeColumns',
-        'ui.grid.selection', 'ngMaterial', 'ui.router','oc.lazyLoad'])
+        'ui.grid.selection', 'ngMaterial', 'ui.router','oc.lazyLoad', 'oobjDirectives'])
         .config(config);
 
 

@@ -2,14 +2,14 @@
 
 
     angular.module('helloWorldApp', ['ngMessages', 'ui.growl','ui.grid','ui.grid.resizeColumns',
-        'ui.grid.selection', 'ngMaterial', 'ui.router'])
+        'ui.grid.selection', 'ngMaterial', 'ui.router', 'oobjDirectives'])
 
 
         .controller("HelloWorldController", HelloWorldController);
 
     HelloWorldController.$inject = ['$scope'];
 
-    function HelloWorldController($scope) {
+    function HelloWorldController( $scope ) {
         $scope.nome = "Warley Ferreira noleto";
 
         $scope.myStyle = {};

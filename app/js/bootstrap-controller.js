@@ -7,7 +7,7 @@
         .controller('BootstrapController', BootstrapController);
 
     BootstrapController.$inject = ['$scope', '$growl'];
-
+    /*@inject*/
     function BootstrapController($scope, $growl) {
         $scope.pessoa = {};
         $scope.pessoas = [];
